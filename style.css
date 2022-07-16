@@ -5,8 +5,10 @@
   --box-shadow: 5px 5px 20px;
   --button-min-width: 160px;
   --simple-margin: 20px 20px;
-  --img-max-width: 400px;
+  --img-max-width: 200px;
   --img-margin-bottom: 20px;
+  --cta-group-padding: 10px;
+  --cta-group-margin: 20px;
 }
 
 h1 {
@@ -31,6 +33,8 @@ body {
     rgb(240, 251, 244) 100.7%
   );
 }
+footer {
+}
 
 .field {
   padding: 1rem;
@@ -54,6 +58,20 @@ body {
   margin-top: 40px;
 }
 
+.intro {
+  text-align: center;
+}
+.container {
+text-align: center;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .about-link,
 .contact-link {
   box-shadow: var(--box-shadow);
@@ -64,29 +82,25 @@ body {
   border-radius: 24px;
   text-decoration: none;
 }
-
-.intro {
-  text-align: center;
-}
-.container {
-  margin-top: 24px;
-  display: flex;
-  justify-content: space-around;
-}
-.contact {
-  text-align: center;
-  padding: 20px;
-  margin: 80px;
+.about-link:hover,
+.contact-link:hover {
+  color: whitesmoke;
 }
 .main-cta {
-  color: whitesmoke;
+  color: var(--primary-color);
   text-decoration: none;
+  padding: var(--cta-group-padding);
+  margin: var(--cta-group-margin);
 }
-.btn {
+.main-cta:hover {
+  color: whitesmoke;
+}
+
+/*.btn {
   display: inline-block;
   background: #4285f4;
   color: whitesmoke;
-  
+
   padding: 20px 30px;
   border-radius: 5px;
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
@@ -98,15 +112,36 @@ body {
   box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -10px) scale(1.2);
   transform: translate(0px, -10px) scale(1.2);
-}
+}*/
 
-#magnifying-glass {
+.about-icon {
   margin: 16px;
-
-  max-width: 80px;
+  max-width: var(--img-max-width);
   max-height: 80px;
 }
 #weather-paragraph {
   text-align: end;
   max-width: 500px;
 }
+/*
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}*/
