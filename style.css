@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #553d8f;
+  --secondary-color: #585858;
+  --accent-color: #8114ff;
+  --box-shadow: 5px 5px 20px;
+  --button-min-width: 160px;
+  --simple-margin: 20px 20px;
+  --img-max-width: 400px;
+  --img-margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2,
+h4 {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+body {
+  padding: 16px;
+  min-height: 700px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+
+.field {
+  padding: 1rem;
+}
+.label {
+  margin-bottom: 24px;
+}
+#body {
+  text-align: inherit;
+}
+.about-page {
+  margin: 80px;
+  justify-content: space-around;
+}
+.landing-intro {
+  margin-top: 80px;
+  padding: 80px 80px;
+  text-align: center;
+}
+.navigation-links {
+  margin-top: 40px;
+}
+
+.about-link,
+.contact-link {
+  box-shadow: var(--box-shadow);
+  min-width: var(--button-min-width);
+  margin: auto 20px;
+  padding: 16px;
+  border: solid 1px;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.intro {
+  text-align: center;
+}
+.container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact {
+  text-align: center;
+  padding: 20px;
+  margin: 80px;
+}
+
+#magnifying-glass {
+  margin: 16px;
+
+  max-width: 80px;
+  max-height: 80px;
+}
+#weather-paragraph {
+  text-align: end;
+  max-width: 500px;
+}
